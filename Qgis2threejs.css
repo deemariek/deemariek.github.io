@@ -10,8 +10,14 @@ body {
 
 #footer {
   position: absolute;
-  left: 5px;
-  bottom: 5px;
+  right: 5px;
+  bottom: 2px;
+}
+
+#footer p {
+  color: white;
+  font-family: "Lucida Grande",sans-serif;
+  font-size: small;
 }
 
 #infobtn {
@@ -220,3 +226,4 @@ table.attrs tr td:first-child {
   color: black;
   font: normal medium sans-serif;
 }
+
