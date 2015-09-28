@@ -38,22 +38,22 @@ body {
   max-width: 480px;
   min-width: 300px;
   z-index: 9999;
-  border: solid gray;
-  border-width: 1px 2px 2px;
-  border-radius: 3px;
+/*  border: solid black;*/
+/*  border-width: 1px 2px 2px;*/
+/*  border-radius: 3px;*/
 }
 
 #popupbar {
-  background: dimgray;
-  color: white;
+  background: none;
+  color: none;
   padding-left: 4px;
-  height: 18px;
+  height: 18px;  
 }
 
 #closebtn {
   color: rgb(220, 220, 220);
-  background: gray;
-  border: 1px solid darkgray;
+  background: black;
+  border: 1px solid black;
   border-radius: 4px;
   font-size: 16px;
   font-weight: bold;
@@ -65,10 +65,13 @@ body {
 }
 
 #popupbody {
-  background-color: white;
+  background-color: black;
   padding: 2px 5px 2px;
   max-height: 500px;
   overflow: auto;
+  font-family: "Lucida Grande",sans-serif;
+  font-size: small;
+  border: 1px solid darkgray;
 }
 
 /* identify result */
@@ -79,7 +82,7 @@ body {
 }
 
 #popupbody table caption {
-  background-color: gray;
+  background-color: black;
   color: white;
   font-size: small;
   padding: 1px;
@@ -92,15 +95,18 @@ body {
 }
 
 table.layer tr {
-  background-color: #eeeeee;
+  background-color: black;
+  color: white;
 }
 
 table.coords tr {
-  background-color: #eeeeee;
+  background-color: black;
+  color: white;
 }
 
 table.attrs tr:nth-child(odd) {
-  background-color: #eeeeee;
+  background-color: black;
+  color: white;
 }
 
 
@@ -114,7 +120,7 @@ table.attrs tr td:first-child {
 }
 
 #pageinfo h1 {
-  background-color: gray;
+  background-color: black;
   color: white;
   font-size: small;
   font-weight: normal;

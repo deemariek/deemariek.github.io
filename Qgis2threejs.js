@@ -575,10 +575,11 @@ Q3D.application = {
     // clicked coordinates
     var pt = this.project.toMapCoordinates(point.x, point.y, point.z);
     r.push('<table class="coords">');
-    r.push("<caption>Clicked coordinates</caption>");
+    r.push("<caption>Terrain at clicked position</caption>");
     r.push("<tr><td>");
 
-    if (typeof proj4 === "undefined") r.push([pt.x.toFixed(2), pt.y.toFixed(2), pt.z.toFixed(2)].join(", "));
+    if (typeof proj4 === "undefined") r.push([pt.z.toFixed(2)].join(", "));
+//    if (typeof proj4 === "undefined") r.push([pt.x.toFixed(2), pt.y.toFixed(2), pt.z.toFixed(2)].join(", "));
     else {
       var lonLat = proj4(this.project.proj).inverse([pt.x, pt.y]);
       r.push(Q3D.Utils.convertToDMS(lonLat[1], lonLat[0]) + ", Elev. " + pt.z.toFixed(2));
